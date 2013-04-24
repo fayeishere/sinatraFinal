@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/javascript/jquery-1.9.1.min.js"></script>
+  </head>
+  <body>
+    <h2>Hello</h2>
+    <p><%=params[:id] %></p>
+      <form method="post">
+        <input type="hidden" name="_method" value="put">
+        <input type="hidden" name="hidden" value="<%=params[:id] %>">
+        <input type="submit" name="submit" value="Go to 3!">
+      </form>
+  </body>
+</html>
